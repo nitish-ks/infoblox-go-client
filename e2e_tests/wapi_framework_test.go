@@ -4810,7 +4810,7 @@ var _ = Describe("HTTPS Record Object", func() {
 			View:       "default",
 			UseTtl:     utils.BoolPtr(true),
 			Ttl:        60,
-			SvcParameters: []ibclient.Svcparams{
+			SvcParameters: []ibclient.SVCParams{
 				{
 					SvcKey: "port",
 					SvcValue: []string{
@@ -4836,7 +4836,7 @@ var _ = Describe("HTTPS Record Object", func() {
 			View:       "default",
 			UseTtl:     utils.BoolPtr(true),
 			Ttl:        60,
-			SvcParameters: []ibclient.Svcparams{
+			SvcParameters: []ibclient.SVCParams{
 				{
 					SvcKey: "port",
 					SvcValue: []string{
@@ -4930,7 +4930,7 @@ var _ = Describe("HTTPS Record Object", func() {
 			View:       "default",
 			UseTtl:     utils.BoolPtr(true),
 			Ttl:        60,
-			SvcParameters: []ibclient.Svcparams{
+			SvcParameters: []ibclient.SVCParams{
 				{
 					SvcKey: "port",
 					SvcValue: []string{
@@ -4954,7 +4954,7 @@ var _ = Describe("HTTPS Record Object", func() {
 			Disable:           utils.BoolPtr(false),
 			UseTtl:            utils.BoolPtr(true),
 			Ttl:               60,
-			SvcParameters:     []ibclient.Svcparams{},
+			SvcParameters:     []ibclient.SVCParams{},
 			Ea:                ibclient.EA{"Site": "India"},
 			ForbidReclamation: utils.BoolPtr(false),
 			Creator:           "SYSTEM",

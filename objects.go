@@ -770,7 +770,7 @@ type RecordHttps struct {
 	Name               string              `json:"name,omitempty"`
 	Priority           uint32              `json:"priority,omitempty"`
 	Reclaimable        bool                `json:"reclaimable,omitempty"`
-	SvcParameters      []Svcparams         `json:"svc_parameters"`
+	SvcParameters      []SVCParams        `json:"svc_parameters"`
 	TargetName         string              `json:"target_name,omitempty"`
 	Ttl                uint32              `json:"ttl,omitempty"`
 	UseTtl             *bool               `json:"use_ttl,omitempty"`
@@ -789,11 +789,6 @@ func (obj RecordHttps) ReturnFields() []string {
 	return obj.returnFields
 }
 
-type Svcparams struct {
-	SvcKey    string   `json:"svc_key,omitempty"`
-	SvcValue  []string `json:"svc_value,omitempty"`
-	Mandatory bool     `json:"mandatory"`
-}
 
 type RecordSVCB struct {
 	IBBase             `json:"-"`

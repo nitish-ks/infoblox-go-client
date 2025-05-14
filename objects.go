@@ -792,7 +792,6 @@ func (obj RecordHttps) ReturnFields() []string {
 
 type RecordSVCB struct {
 	IBBase             `json:"-"`
-	objectType         string
 	Ref                string              `json:"_ref,omitempty"`
 	AwsRte53RecordInfo *Awsrte53recordinfo `json:"aws_rte53_record_info,omitempty"`
 	CloudInfo          *GridCloudapiInfo   `json:"cloud_info,omitempty"`
@@ -822,7 +821,7 @@ type SVCParams struct {
 	SvcValue  []string `json:"svc_value,omitempty"`
 }
 
-func (nc RecordSVCB) ObjectType() string {
+func (RecordSVCB) ObjectType() string {
 	return "record:svcb"
 }
 
